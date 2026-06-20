@@ -22,7 +22,7 @@ def init_supabase():
 def init_gemini():
     genai.configure(
         api_key=st.secrets["GEMINI_API_KEY"])
-    return genai.GenerativeModel('gemini-1.5-flash')
+    return genai.GenerativeModel('gemini-2.5-flash')
 
 supabase = init_supabase()
 model    = init_gemini()
