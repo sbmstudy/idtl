@@ -175,11 +175,11 @@ else:
             logout()
 
     if role == "student":
-        from pages.student import show_student
+        from student import show_student
         show_student(supabase, model)
     elif role == "teacher":
-        from pages.teacher import show_teacher
+        from teacher import show_teacher
         show_teacher(supabase, model)
     elif role == "admin":
-        from pages.admin import show_admin
+        from admin import show_admin
         show_admin(supabase)
